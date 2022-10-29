@@ -4,12 +4,5 @@
  - PHP Version 8.1.6
  - MYSQL DB
  - HTML/CSS
+ -JS/JQUERY/ajax
 
-#### FIRST STEP IS CREATING AN REGISTRATION FORMS, DESIGN AND DB CONNECT
- - Forms
-    1. Sign in
-    2. Sign up
- - STYLING
-    1. CSS STYLINGS
- - DB
-    1. Mysql connect
