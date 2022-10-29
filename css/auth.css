@@ -12,11 +12,6 @@ body {
     font-family: Montserrat;
     color: black;
 }
-
-nav {
-    background: #0e1321;
-    padding: 0 15px;
-}
 a {
     color: white;
     text-decoration: none;
@@ -28,6 +23,12 @@ a {
     background-color: #e7e7e8;
     padding: 30px;
     border-radius: 10px ;
+}
+.form-container:hover{
+    -webkit-box-shadow: 10px 0px 127px 43px rgba(209,209,209,1);
+    -moz-box-shadow: 10px 0px 127px 43px rgba(209,209,209,1);
+    box-shadow: 10px 0px 127px 43px rgba(209,209,209,1);
+    transition: 0.3s ease-in-out;
 }
 .auth-form{
     display: flex;
