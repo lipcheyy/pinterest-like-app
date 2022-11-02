@@ -2,6 +2,7 @@
     if($_SESSION['user']){
         header('Location: homepage.php');
     }
+
 ?>
 <!doctype html>
 <html lang="en">
