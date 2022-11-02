@@ -8,5 +8,6 @@ if (isset($_POST['save'])){
     move_uploaded_file($_FILES['photo']['tmp_name'],'../'.$path);
     /** @var TYPE_NAME $connect */
     mysqli_query($connect,"INSERT INTO `images` (`id`, `creator`, `description`, `path`) VALUES (NULL, '$creator', '$description', '$path')");
+    header('Location: ../homepage.php');
 }
 

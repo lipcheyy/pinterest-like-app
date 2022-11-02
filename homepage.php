@@ -1,10 +1,12 @@
 <?php
 session_start();
 include 'connect.php';
+include "views/header.php";
+include 'includes/foo.php';
 if(!$_SESSION['user']){
     header('Location: authorization/index.php');
 }
-include "views/header.php";?>
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -17,9 +19,11 @@ include "views/header.php";?>
 </head>
 <body>
     <div class="container">
+        <?php while ($value=mysqli_fetch_array($images)){?>
         <div class="item">
-            <img src="img/1667398480sui.jpeg" alt="">
+            <img src="<?php echo $value['path'];?>" alt="">
         </div>
+        <?php }?>
     </div>
 </body>
 </html>
