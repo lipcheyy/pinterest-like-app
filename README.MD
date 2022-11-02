@@ -4,5 +4,5 @@
  - PHP Version 8.1.6
  - MYSQL DB
  - HTML/CSS
- -JS/JQUERY/ajax
+ -JS/JQUERY/ajaxf
 
