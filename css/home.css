@@ -21,3 +21,20 @@ a {
     text-decoration: none;
     font-family: Montserrat;
 }
+.container{
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    flex-wrap: wrap;
+}
+.item{
+    background-color: #bbbbbb;
+    padding: 30px ;
+    border-radius: 10px;
+}
+.item img{
+    width: 250px;
+    height: 300px;
+}

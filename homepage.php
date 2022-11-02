@@ -1,5 +1,6 @@
 <?php
 session_start();
+include 'connect.php';
 if(!$_SESSION['user']){
     header('Location: authorization/index.php');
 }
@@ -15,7 +16,10 @@ include "views/header.php";?>
     <title>Homepage</title>
 </head>
 <body>
-
-
+    <div class="container">
+        <div class="item">
+            <img src="img/1667398480sui.jpeg" alt="">
+        </div>
+    </div>
 </body>
 </html>
