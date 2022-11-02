@@ -7,7 +7,12 @@ if(!$_SESSION['user']){
     header('Location: authorization/index.php');
 
 }
+/** @var TYPE_NAME $connect */
 $images=mysqli_query($connect,"SELECT * FROM `images`");
+$select=mysqli_query($connect,"SELECT path FROM images WHERE id='37'");
+$row=mysqli_fetch_row($select);
+$path = $row[0];
+echo $path;
 ?>
 <!doctype html>
 <html lang="en">

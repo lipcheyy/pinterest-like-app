@@ -3,6 +3,7 @@ session_start();
 include 'connect.php';
 include 'views/header.php';
 include 'includes/favor.php';
+include 'includes/remove-from-favorites.php';
 $images=mysqli_query($connect,"SELECT * FROM `favorites`");
 ?>
 <!doctype html>
@@ -22,8 +23,9 @@ $images=mysqli_query($connect,"SELECT * FROM `favorites`");
             <input type="hidden" name="id">
             <img src="<?php echo $value['path'];?>" alt="">
             <p class="description"><?= $value['description']?></p>
-
+            <a href="includes/remove-from-favorites.php?id=<?=$value['id']?>" class="favor" ">Remove from favorites</a>
         </div>
+
     <?php }?>
 </div>
 </body>
