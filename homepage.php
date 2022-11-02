@@ -27,6 +27,7 @@ $images=mysqli_query($connect,"SELECT * FROM `images`");
             <img src="<?php echo $value['path'];?>" alt="">
             <p class="description"><?= $value['description']?></p>
             <div class="btns">
+                <a href="includes/favor.php?id=<?= $value['id']?>" class="fav">Add to favorites</a>
                 <?php if ($_SESSION['user']['login']=="admin"): ?>
                     <a href="includes/delete.php?id=<?= $value['id']?>" class="remove">delete</a>
                 <?php endif;?>

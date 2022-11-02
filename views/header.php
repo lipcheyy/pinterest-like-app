@@ -9,6 +9,7 @@ session_start();
     <?php if ($_SESSION['user']['login']=='admin'):?>
         <a href="adminpanel.php">Admin Panel</a>
     <?php endif;?>
+    <a href="favorites.php">Favirotes</a>
     <a class="sui text" href="includes/exit.php">EXIT</a>
     <img class="avatar" src="<?= $_SESSION['user']['avatar']?>" alt="">
 </header>

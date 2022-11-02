@@ -1,0 +1,28 @@
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    margin: 130px auto;
+    gap: 15px;
+     background-color: #e7e7e8;;
+    padding: 50px;
+    border-radius: 10px ;
+}
+#save{
+    padding: 10px 15px;
+    border: 0;
+    background-color: #bdbbbb;
+    cursor: pointer;
+    border-radius: 10px;
+}
+#save:hover{
+    padding: 15px 20px;
+    transition: 0.1s ease-in;
+}
+form:hover{
+    -webkit-box-shadow: 10px 0px 127px 43px rgba(209,209,209,1);
+    -moz-box-shadow: 10px 0px 127px 43px rgba(209,209,209,1);
+    box-shadow: 10px 0px 127px 43px rgba(209,209,209,1);
+    transition: 0.3s ease-in-out;
+}
