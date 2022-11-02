@@ -21,7 +21,12 @@ if(!$_SESSION['user']){
     <div class="container">
         <?php while ($value=mysqli_fetch_array($images)){?>
         <div class="item">
+            <input type="hidden" name="id">
             <img src="<?php echo $value['path'];?>" alt="">
+            <p class="description"><?= $value['description']?></p>
+            <?php if ($_SESSION['user']['login']=="admin"): ?>
+                <a href="#">delete nahoi</a>
+            <?php endif;?>
         </div>
         <?php }?>
     </div>

@@ -1,4 +1,10 @@
 <?php
 require_once 'connect.php';
 $images=mysqli_query($connect,"SELECT * FROM `images`");
-//header("Location: ". $_SERVER['HTTP_REFERER']);
+
+$information=mysqli_fetch_assoc($images);
+/*$_SESSION['info']=[
+  'id'=>$information['id'],
+  'description'=>$information['description'],
+    'creator'=>$information['creator']
+];*/
