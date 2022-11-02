@@ -25,7 +25,7 @@ $images=mysqli_query($connect,"SELECT * FROM `images` WHERE creator='$creator'")
             <p class="description"><?= $value['description']?></p>
             <div class="btns">
                 <a href="includes/delete.php?id=<?= $value['id']?>" class="remove">remove</a>
-                <a href="includes/edit.php?id=<?= $value['id']?>" class="edit">Edit</a>
+                <a href="edit_form.php?id=<?= $value['id']?>" class="edit">Edit</a>
             </div>
 
         </div>

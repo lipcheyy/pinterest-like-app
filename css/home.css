@@ -24,6 +24,7 @@ a {
 .container{
     display: flex;
     justify-content: space-between;
+
     width: 1200px;
     margin: 0 auto;
     padding: 40px 20px;
@@ -34,8 +35,21 @@ a {
     padding: 30px ;
     border-radius: 10px;
     margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.btns{
+    display: flex;
+    justify-content: end;
 }
 .item img{
     width: 250px;
     height: 300px;
+}
+.remove{
+    background-color: red;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
 }

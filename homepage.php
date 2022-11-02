@@ -26,10 +26,12 @@ $images=mysqli_query($connect,"SELECT * FROM `images`");
             <input type="hidden" name="id">
             <img src="<?php echo $value['path'];?>" alt="">
             <p class="description"><?= $value['description']?></p>
-            <?php if ($_SESSION['user']['login']=="admin"): ?>
-                <a href="#">delete nahoi</a>
-            <?php endif;?>
-        </div>
+            <div class="btns">
+                <?php if ($_SESSION['user']['login']=="admin"): ?>
+                    <a href="includes/delete.php?id=<?= $value['id']?>" class="remove">delete</a>
+                <?php endif;?>
+            </div>
+            </div>
         <?php }?>
     </div>
 </body>
