@@ -5,7 +5,9 @@ include "views/header.php";
 include 'includes/foo.php';
 if(!$_SESSION['user']){
     header('Location: authorization/index.php');
+
 }
+$images=mysqli_query($connect,"SELECT * FROM `images`");
 ?>
 <!doctype html>
 <html lang="en">
