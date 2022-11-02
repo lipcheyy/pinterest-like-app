@@ -7,7 +7,7 @@ session_start();
     <a href="add_new_img_form.php " class="text">Add new image</a>
     <a href="my_gallery.php" class="text">My gallery</a>
     <?php if ($_SESSION['user']['login']=='admin'):?>
-        <a href="#">Admin Panel</a>
+        <a href="adminpanel.php">Admin Panel</a>
     <?php endif;?>
     <a class="sui text" href="includes/exit.php">EXIT</a>
     <img class="avatar" src="<?= $_SESSION['user']['avatar']?>" alt="">
