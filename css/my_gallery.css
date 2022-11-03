@@ -15,6 +15,12 @@
     flex-direction: column;
     gap: 10px;
 }
+.item:hover{
+    -webkit-box-shadow: 10px 0px 127px 43px rgba(209,209,209,1);
+    -moz-box-shadow: 10px 0px 127px 43px rgba(209,209,209,1);
+    box-shadow: 10px 0px 127px 43px rgba(209,209,209,1);
+    transition: 0.3s ease-in-out;
+}
 .item img{
     width: 250px;
     height: 300px;

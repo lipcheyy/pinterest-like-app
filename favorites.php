@@ -4,7 +4,8 @@ include 'connect.php';
 include 'views/header.php';
 include 'includes/favor.php';
 include 'includes/remove-from-favorites.php';
-$images=mysqli_query($connect,"SELECT * FROM `favorites`");
+$users_favorites=$_SESSION['user']['login'];
+$images=mysqli_query($connect,"SELECT * FROM `favorites` WHERE user='$users_favorites'");
 ?>
 <!doctype html>
 <html lang="en">

@@ -31,6 +31,7 @@ echo $path;
             <input type="hidden" name="id">
             <img src="<?php echo $value['path'];?>" alt="">
             <p class="description"><?= $value['description']?></p>
+            <p>Added by <span style="color: red; font-weight: bolder"><?= $value['creator']?></span></p>
             <div class="btns">
                 <a href="includes/favor.php?id=<?= $value['id']?>" class="fav">Add to favorites</a>
                 <?php if ($_SESSION['user']['login']=="admin"): ?>

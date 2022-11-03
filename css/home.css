@@ -23,9 +23,9 @@ a {
 }
 .container{
     display: flex;
-    justify-content: space-between;
-
-    width: 1200px;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 600px;
     margin: 0 auto;
     padding: 40px 20px;
     flex-wrap: wrap;
